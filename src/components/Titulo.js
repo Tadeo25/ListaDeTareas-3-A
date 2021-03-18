@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class Titulo extends Component {
-    render() {
-        return (
-            <div>
-                <h1 className="text-center display-2 text-light">
-                    Lista de Tareas
-                </h1>
-            </div>
-        );
-    }
+export default function Titulo(props) {
+    return (
+        <>
+            <h1 className="text-center display-2 text-dark">
+                Lista de Tareas {props.emoji}
+            </h1>
+        </>
+    );
 }
-
-export default Titulo;
